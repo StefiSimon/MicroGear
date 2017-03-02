@@ -2,9 +2,9 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import {IndexRoute, Router, Route, browserHistory} from 'react-router';
-import App from './components/App';
-import Header from './components/Header';
-import MainView from './components/MainView';
+import App from './containers/App';
+import Header from './containers/Header';
+import MainView from './containers/MainView';
 
 import 'jquery';
 
