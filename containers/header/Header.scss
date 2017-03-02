@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+header {
+  background-color: $color-brand-blue;
+  color: white;
+
+  .header-container {
+    width: 100%;
+    display: flex;
+  }
+
+  .header-container-logo {
+    padding: 0 $space-m;
+  }
+
+  .logo {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .header-container-menu-ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      padding: $space-l;
+      font-size: 14px;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+

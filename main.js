@@ -1,9 +1,8 @@
-
 import ReactDOM from 'react-dom';
 import React from 'react';
 import {IndexRoute, Router, Route, browserHistory} from 'react-router';
 import App from './containers/App';
-import Header from './containers/Header';
+import Header from './containers/header/Header';
 import MainView from './containers/MainView';
 
 import 'jquery';

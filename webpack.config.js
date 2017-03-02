@@ -32,14 +32,7 @@ module.exports = {
       },
       { test: /\.scss$/,
         loader: "style-loader!css-loader!sass-loader",
-        include: path.join(__dirname, 'node_modules'),
-        exclude: /flexboxgrid/,
        },
-      {
-        test: /\.scss$/,
-        loader: 'style!css?modules',
-        include: /flexboxgrid/,
-      },
       { test: /\.(png|svg)$/, loader: "url-loader?limit=100000" },
       { test: /\.(jpg|png)$/, loader: "file-loader?name=[name].[ext]" },
     ]
