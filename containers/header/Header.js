@@ -7,11 +7,7 @@ class Header extends Component {
         <header>
           <div className="header-container">
             <div className="header-container-logo">
-              <div className="header-container-logo-float">
-                <span className="logo">
-                  <img src="http://www.ripoffreport.com/d/r1054977-cqdcr3-zl9ur9ddte/gtg.png" />
-                </span>
-              </div>
+              <img src="https://portfolios.kpu.ca/artefact/file/download.php?file=92121&view=37215https://portfolios.kpu.ca/artefact/file/download.php?file=92121&view=37215" />
             </div>
             <div className="header-container-menu">
                 <ul className="header-container-menu-ul">
@@ -21,6 +17,7 @@ class Header extends Component {
                   <li className="link"> Contact </li>
                 </ul>
             </div>
+
           </div>
         </header>
     );

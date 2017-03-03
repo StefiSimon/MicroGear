@@ -1,8 +1,8 @@
-@import '../../variables.scss';
+@import '../../styling/variables';
 
 header {
-  background-color: $color-brand-blue;
-  color: white;
+  background-color: white;
+  color: $color-brand-blue;
 
   .header-container {
     width: 100%;
@@ -13,11 +13,9 @@ header {
     padding: 0 $space-m;
   }
 
-  .logo {
-    img {
-      width: 100px;
-      height: 100px;
-    }
+  img {
+    width: 100px;
+    height: 100px;
   }
 
   .header-container-menu-ul {
@@ -26,15 +24,24 @@ header {
 
     li {
       padding: $space-l;
-      font-size: 14px;
-      font-weight: 100;
+      font-size: $font-size-menu;
       text-transform: uppercase;
       letter-spacing: 1px;
       cursor: pointer;
 
       &:hover {
         opacity: 0.8;
+        background-color: $color-brand-blue;
+        color: white;
       }
+    }
+  }
+}
+
+@media only screen and (max-width:$tablet) {
+  .header-container-menu{
+    .header-container-menu-ul {
+      display: none;
     }
   }
 }

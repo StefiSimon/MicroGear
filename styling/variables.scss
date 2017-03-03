@@ -5,8 +5,9 @@ $color-brand-blue: #3160AB;
 $color-brand-orange: #FFAA06;
 $color-brand-beige: #EAE4D4;
 
-// FONT
-$font-default: 'Roboto';
+// FONT-SIZE
+$font-size-menu: 14px;
+
 
 //SPACING
 $space-default: 16px;
@@ -16,6 +17,7 @@ $space-m: 16px;
 $space-l: 32px;
 $space-xl: 64px;
 
-body {
-  font-family: 'Lato', sans-serif;
-}
+
+//MEDIA QUERIES
+$mobile: 480px;
+$tablet: 760px;

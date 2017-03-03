@@ -6,6 +6,7 @@ import Header from './containers/header/Header';
 import MainView from './containers/MainView';
 
 import 'jquery';
+import './styling/main.scss';
 
 const routes = (
       <Router history={browserHistory}>
