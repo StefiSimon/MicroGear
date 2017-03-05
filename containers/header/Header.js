@@ -16,8 +16,18 @@ class Header extends Component {
                   <li className="link"> Tehnologii </li>
                   <li className="link"> Contact </li>
                 </ul>
-            </div>
 
+                <div className="header-container-menu-ul-tablet">
+                  <div className="icon">
+                    <div className="icon-burger"></div>
+                  </div>
+                </div>
+
+                <div className="header-container-menu-ul-mobile">
+                  mobile
+                </div>
+
+            </div>
           </div>
         </header>
     );

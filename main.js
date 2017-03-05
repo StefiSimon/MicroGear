@@ -7,6 +7,7 @@ import MainView from './containers/MainView';
 
 import 'jquery';
 import './styling/main.scss';
+import './font-awesome-4.7.0/scss/font-awesome.scss';
 
 const routes = (
       <Router history={browserHistory}>

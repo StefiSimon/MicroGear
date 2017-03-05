@@ -37,10 +37,23 @@ header {
     }
   }
 }
+@media only screen and (min-width:$tablet) {
+  .header-container-menu-ul-tablet, .header-container-menu-ul-mobile {
+    display: none;
+  }
+}
 
 @media only screen and (max-width:$tablet) {
   .header-container-menu{
-    .header-container-menu-ul {
+    .header-container-menu-ul, .header-container-menu-ul-mobile {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width:$mobile) {
+  .header-container-menu{
+    .header-container-menu-ul, .header-container-menu-ul-tablet {
       display: none;
     }
   }

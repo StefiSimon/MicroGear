@@ -1,0 +1,11 @@
+@import "../font-awesome-4.7.0/scss/variables";
+.icon {
+  font-family: 'FontAwesome';
+
+  .icon-burger {
+    &:before {
+      content: $fa-var-bars;
+    }
+  }
+}
+
