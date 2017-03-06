@@ -1,60 +1,79 @@
 @import '../../styling/variables';
 
-header {
-  background-color: white;
-  color: $color-brand-blue;
+.header {
+  background-color: $color-brand-blue;
+  color: white;
+  min-height: 50px;
 
   .header-container {
-    width: 100%;
-    display: flex;
-  }
+    padding: 0 15px;
+    margin: 0 auto;
 
-  .header-container-logo {
-    padding: 0 $space-m;
-  }
-
-  img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .header-container-menu-ul {
-    list-style: none;
-    display: flex;
-
-    li {
-      padding: $space-l;
-      font-size: $font-size-menu;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+    .header-container-logo {
+      padding: 0 $space-m;
+      position: relative;
+      color: inherit;
+      float: left;
       cursor: pointer;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
 
-      &:hover {
-        opacity: 0.8;
-        background-color: $color-brand-blue;
-        color: white;
+    .header-container-button {
+      border: 0;
+      position: relative;
+      float: right;
+      border-radius: 4px;
+      background-color: transparent;
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .header-container-menu {
+      border-top: none;
+
+      li {
+        padding: $space-l;
+        font-size: $font-size-menu;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .header-container-menu-desktop {
+        list-style: none;
+        display: flex;
+      }
+
+      .header-container-menu-mobile {
+        list-style: none;
       }
     }
   }
 }
-@media only screen and (min-width:$tablet) {
-  .header-container-menu-ul-tablet, .header-container-menu-ul-mobile {
-    display: none;
-  }
-}
 
-@media only screen and (max-width:$tablet) {
-  .header-container-menu{
-    .header-container-menu-ul, .header-container-menu-ul-mobile {
-      display: none;
-    }
-  }
-}
+@media only screen and (max-width: $tablet) {
 
-@media only screen and (max-width:$mobile) {
-  .header-container-menu{
-    .header-container-menu-ul, .header-container-menu-ul-tablet {
-      display: none;
+  .header{
+    .header-container{
+      .header-container-button {
+        display: block;
+      }
+      .header-container-menu {
+        padding-top: 20px;
+
+        .header-container-menu-desktop, .header-container-menu-mobile {
+          display: none;
+        }
+      }
     }
   }
 }
