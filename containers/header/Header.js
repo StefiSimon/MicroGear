@@ -36,12 +36,14 @@ class Header extends Component {
                 <ul className="header-container-menu-desktop">
                   <li className="link"> Despre </li>
                   <li className="link"> Inscriere </li>
+                  <li className="link"> Program </li>
                   <li className="link"> Tehnologii </li>
                   <li className="link"> Contact </li>
                 </ul>
                 <ul className="header-container-menu-mobile" onMouseLeave={() => this.toggleMenu('close')} onClick={() => this.toggleMenu('close')}>
                   <li className="link"> Despre </li>
                   <li className="link"> Inscriere </li>
+                  <li className="link"> Program </li>
                   <li className="link"> Tehnologii </li>
                   <li className="link"> Contact </li>
                 </ul>
