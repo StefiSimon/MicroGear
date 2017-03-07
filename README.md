@@ -5,4 +5,4 @@
 - Open project directory locally
 - Run in your console
     node server.js
-- Go to localhost:3000 in your browser
+- Go to localhost:4000 in your browser

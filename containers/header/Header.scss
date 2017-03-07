@@ -1,36 +1,37 @@
 @import '../../styling/variables';
 
 .header {
+  min-height: 70px;
   background-color: $color-brand-blue;
   color: white;
-  min-height: 50px;
 
   .header-container {
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
 
     .header-container-logo {
-      padding: 0 $space-m;
       position: relative;
-      color: inherit;
       float: left;
+      padding: 5px;
       cursor: pointer;
+      color: inherit;
+
       img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
       }
+
     }
 
     .header-container-button {
-      border: 0;
+      display: none;
       position: relative;
       float: right;
+      padding: 26px 0;
+      border: 0;
       border-radius: 4px;
       background-color: transparent;
-      padding: 10px;
-      margin: 5px;
       cursor: pointer;
-      display: none;
     }
 
     .header-container-menu {
@@ -38,9 +39,9 @@
 
       li {
         padding: $space-l;
+        letter-spacing: 1px;
         font-size: $font-size-menu;
         text-transform: uppercase;
-        letter-spacing: 1px;
         cursor: pointer;
 
         &:hover {
@@ -49,12 +50,23 @@
       }
 
       .header-container-menu-desktop {
-        list-style: none;
         display: flex;
+        list-style: none;
       }
 
       .header-container-menu-mobile {
         list-style: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $tablet) {
+  .header {
+    .header-container {
+      .header-container-menu {
+        .header-container-menu-mobile {
+          display: none;
+        }
       }
     }
   }

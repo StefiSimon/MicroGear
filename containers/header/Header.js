@@ -45,7 +45,6 @@ class Header extends Component {
                   <li className="link"> Tehnologii </li>
                   <li className="link"> Contact </li>
                 </ul>
-
             </div>
           </div>
         </header>
