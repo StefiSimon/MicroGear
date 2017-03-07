@@ -2,9 +2,39 @@
 .icon {
   font-family: 'FontAwesome';
 
-  .icon-burger {
-    &:before {
+  &.icon-burger {
+    &:after {
       content: $fa-var-bars;
+    }
+  }
+
+  &.icon-info {
+    &:after {
+      content: $fa-var-info;
+    }
+  }
+
+  &.icon-sign-in {
+    &:after {
+      content: $fa-var-sign-in;
+    }
+  }
+
+  &.icon-calendar {
+    &:after {
+      content: $fa-var-calendar;
+    }
+  }
+
+  &.icon-tools {
+    &:after {
+      content: $fa-var-cog;
+    }
+  }
+
+  &.icon-contact {
+    &:after {
+      content: $fa-var-address-book-o;
     }
   }
 }

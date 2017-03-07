@@ -2,8 +2,8 @@
 
 .header {
   min-height: 70px;
-  background-color: $color-brand-blue;
-  color: white;
+  background-color: transparent;
+  color: $color-brand-beige;
 
   .header-container {
     margin: 0 auto;
@@ -12,7 +12,7 @@
     .header-container-logo {
       position: relative;
       float: left;
-      padding: 5px;
+      padding: 10px;
       cursor: pointer;
       color: inherit;
 
@@ -38,7 +38,7 @@
       border-top: none;
 
       li {
-        padding: $space-l;
+        padding: $space-l $space-m;
         letter-spacing: 1px;
         font-size: $font-size-menu;
         text-transform: uppercase;
@@ -76,11 +76,23 @@
 
   .header{
     .header-container{
+      .header-container-logo {
+        padding: 5px;
+      }
       .header-container-button {
         display: block;
       }
       .header-container-menu {
-        padding-top: 20px;
+        padding-top: 65px;
+
+        li {
+          padding: 25px;
+          border-bottom: 1px solid opacify($color-brand-beige, 1);
+
+          &:last-of-type {
+            border-bottom: none;
+          }
+        }
 
         .header-container-menu-desktop, .header-container-menu-mobile {
           display: none;
