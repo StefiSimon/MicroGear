@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import Header from './header/Header';
+import MainView from './MainView';
 
 class App extends Component {
 
   render() {
-    const { children } = this.props;
+
     return(
         <div>
-          {children}
+          <Header/>
+          <MainView />
         </div>
     )
   }

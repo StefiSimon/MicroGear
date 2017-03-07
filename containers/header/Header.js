@@ -23,7 +23,7 @@ class Header extends Component {
           <div className="header-container">
 
             <div className="header-container-title">
-              <a className="header-container-logo">
+              <a className="header-container-logo" href="#home">
                 <img src="https://scontent.fotp3-2.fna.fbcdn.net/v/t31.0-8/14715450_387428041600877_4956678542402155955_o.png?oh=228f94a935e279ee81e97a24acf9ab25&oe=597073E8" />
               </a>
               <div className="header-container-button" onClick={() => this.toggleMenu('toggle')}>
