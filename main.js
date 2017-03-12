@@ -3,7 +3,7 @@ import React from 'react';
 import {IndexRoute, Router, Route, browserHistory} from 'react-router';
 import App from './containers/App';
 import Header from './containers/header/Header';
-import MainView from './containers/MainView';
+import Home from './containers/home/Home';
 
 import 'jquery';
 import './styling/main.scss';
@@ -13,7 +13,7 @@ const routes = (
       <Router history={browserHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Header}/>
-          <Route path="/home" component={MainView} />
+          <Route path="/home" component={Home} />
         </Route>
       </Router>
 );

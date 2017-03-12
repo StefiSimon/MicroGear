@@ -23,9 +23,9 @@ class Header extends Component {
           <div className="header-container">
 
             <div className="header-container-title">
-              <div className="header-container-logo" href="#home">
-                <a href="http://tinypic.com?ref=f10b4w" target="_blank"><img src="http://i68.tinypic.com/f10b4w.png" /></a>
-              </div>
+              <a className="header-container-logo" href="#home">
+                <img src="http://i68.tinypic.com/f10b4w.png" />
+              </a>
               <div className="header-container-button" onClick={() => this.toggleMenu('toggle')}>
                 <div className="icon icon-burger">
                 </div>
@@ -35,37 +35,37 @@ class Header extends Component {
             <div className="header-container-menu">
                 <ul className="header-container-menu-desktop">
                   <li className="link">
-                    Despre <span className="icon icon-info"></span>
+                    <span className="icon icon-info"></span> Despre
                   </li>
                   <li className="link">
-                    Inscriere <span className="icon icon-sign-in"></span>
+                    <span className="icon icon-sign-in"></span> Inscriere
                   </li>
                   <li className="link">
-                    Program <span className="icon icon-calendar"></span>
+                    <span className="icon icon-calendar"></span> Program
                   </li>
                   <li className="link">
-                    Tehnologii <span className="icon icon-tools"></span>
+                    <span className="icon icon-tools"></span> Tehnologii
                   </li>
                   <li className="link">
-                    Contact <span className="icon icon-contact"></span>
+                    <span className="icon icon-contact"></span> Contact
                   </li>
                 </ul>
 
                 <ul className="header-container-menu-mobile" onMouseLeave={() => this.toggleMenu('close')} onClick={() => this.toggleMenu('close')}>
                   <li className="link">
-                    Despre <span className="icon icon-info"></span>
+                    <span className="icon icon-info"></span> Despre
                   </li>
                   <li className="link">
-                    Inscriere <span className="icon icon-sign-in"></span>
+                    <span className="icon icon-sign-in"></span> Inscriere
                   </li>
                   <li className="link">
-                    Program <span className="icon icon-calendar"></span>
+                    <span className="icon icon-calendar"></span> Program
                   </li>
                   <li className="link">
-                    Tehnologii <span className="icon icon-tools"></span>
+                    <span className="icon icon-tools"></span> Tehnologii
                   </li>
                   <li className="link">
-                    Contact <span className="icon icon-contact"></span>
+                    <span className="icon icon-contact"></span> Contact
                   </li>
                 </ul>
             </div>
