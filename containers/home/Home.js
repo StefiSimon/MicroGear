@@ -4,7 +4,9 @@ class Home extends Component {
   render() {
     return (
         <div id="home">
-          THIS IS HOME PAGE
+          <div className="home-container">
+            title and other info
+          </div>
         </div>
     );
   }
