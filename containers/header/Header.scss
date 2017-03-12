@@ -3,7 +3,7 @@
 .header {
   min-height: 70px;
   background-color: transparent;
-  color: $color-brand-beige;
+  color: white;
 
   .header-container {
     margin: 0 auto;
@@ -17,10 +17,9 @@
       color: inherit;
 
       img {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: auto;
       }
-
     }
 
     .header-container-button {
@@ -52,10 +51,13 @@
       .header-container-menu-desktop {
         display: flex;
         list-style: none;
+        padding-top: 20px;
       }
 
       .header-container-menu-mobile {
         list-style: none;
+        padding-top: 20px;
+        border-top: 1px solid white;
       }
     }
   }
@@ -84,9 +86,10 @@
       }
       .header-container-menu {
         padding-top: 65px;
+        margin-left: -50px;
 
         li {
-          padding: 25px;
+          padding: 25px 0px;
           border-bottom: 1px solid opacify($color-brand-beige, 1);
 
           &:last-of-type {
