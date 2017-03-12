@@ -1,1 +1,43 @@
 @import '../../styling/variables';
+
+.about__title {
+    padding-left: 50px;
+}
+
+.temp-container {
+    background-color: white;
+    color: black;
+}
+
+.card-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    justify-content: space-around;
+}
+
+.card {
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.card__name {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card__role {
+    font-size: 0.8em;
+    color: #555;
+}

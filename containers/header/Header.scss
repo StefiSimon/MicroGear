@@ -37,15 +37,11 @@
       border-top: none;
 
       li {
-        padding: $space-l;
+        padding: $space-l $space-m;
         letter-spacing: 1px;
         font-size: $font-size-menu;
         text-transform: uppercase;
         cursor: pointer;
-
-        &:first-of-type {
-          padding: $space-l $space-l $space-l 0px;
-        }
 
         &:hover {
           opacity: 0.8;
@@ -59,13 +55,12 @@
       .header-container-menu-desktop {
         display: flex;
         list-style: none;
-        float: right;
+        padding-top: 20px;
       }
 
       .header-container-menu-mobile {
         list-style: none;
-        padding-top: 10px;
-        clear: both;
+        padding-top: 20px;
       }
     }
   }
@@ -81,20 +76,7 @@
     }
   }
 }
-@media only screen and (max-width: 960px) and (min-width: $tablet) {
-  .header {
-    .header-container {
-      .header-container-menu {
-        li {
-          padding: $space-l $space-s;
-          &:first-of-type {
-            padding: $space-l $space-s $space-l 0px;
-          }
-        }
-      }
-    }
-  }
-}
+
 @media only screen and (max-width: $tablet) {
 
   .header{
@@ -125,4 +107,3 @@
     }
   }
 }
-
