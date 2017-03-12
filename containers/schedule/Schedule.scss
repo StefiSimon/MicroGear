@@ -2,8 +2,8 @@
 
 .schedule__container {
     padding: 50px;
-        background-color: white;
-        color: black;
+    background-color: white;
+    color: black;
 }
 
 .schedule__para {
@@ -16,11 +16,15 @@
 }
 
 .filler-photo {
-    max-width: 40vw;
-    overflow: auto;
+    overflow: hidden;
+    margin-top: 50px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.filler-photo img {
 }
 .timetable {
-    background-color: grey;
     max-width: 30vw;
 }
 
@@ -29,11 +33,14 @@
 }
 
 .timetable-container {
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
+}
+
+.course {
+    background-color: grey;
 }
 
 .course__desc {

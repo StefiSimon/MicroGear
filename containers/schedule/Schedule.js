@@ -57,7 +57,7 @@ class Schedule extends Component {
                     <div className="timetable timetable__beginners">
                         {beginners.map(dataToCourse)}
                         <div className="filler-photo">
-                            <img src="https://thumbs.dreamstime.com/z/diet-woman-eating-vegetable-salad-26750865.jpg" />
+                            <img src="https://thumbs.dreamstime.com/z/diet-woman-eating-vegetable-salad-26750865.jpg"/>
                         </div>
                     </div>
                     <div className="timetable timetable__advanced">
