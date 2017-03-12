@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Home.scss';
+import About from '../about/About';
 
 class Home extends Component {
   componentDidMount() {
@@ -27,7 +28,7 @@ class Home extends Component {
           <div className="sections-container">
             <div className="section section-basic">
               <div className="container">
-                Lala
+                <About />
               </div>
             </div>
           </div>
