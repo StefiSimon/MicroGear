@@ -14,3 +14,40 @@
 .schedule__title {
     text-align: center;
 }
+
+.filler-photo {
+    max-width: 40vw;
+    overflow: auto;
+}
+.timetable {
+    background-color: grey;
+    max-width: 30vw;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.timetable-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.course__desc {
+    font-size: 1.2em;
+}
+
+.course__nr {
+    color: blue;
+}
+
+.course__details {
+    color: green;
+}
+
+.course__ora {
+    margin-bottom: 10px;
+}

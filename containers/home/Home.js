@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import About from '../about/About';
 import Schedule from '../schedule/Schedule';
+
 class Home extends Component {
   render() {
     return (
