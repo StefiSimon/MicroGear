@@ -1,12 +1,18 @@
 @import '../../styling/variables';
 
-.about__title {
-    padding-left: 50px;
+.about__container {
+    padding: 50px;
+        background-color: white;
+        color: black;
 }
 
-.temp-container {
-    background-color: white;
-    color: black;
+.about__para {
+    padding-left: 40px;
+    text-indent: 30px;
+}
+
+.about__title {
+    text-align: center;
 }
 
 .card-container {
@@ -26,10 +32,14 @@
     overflow: hidden;
 }
 
-.card img{
+.card img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+}
+
+.card p {
+    text-indent: 30px;
 }
 
 .card__name {
