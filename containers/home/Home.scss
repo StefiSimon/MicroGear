@@ -1,0 +1,37 @@
+@import '../../styling/variables';
+
+.home-container {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+
+  .home-container-image {
+    margin-top: -70px;
+
+    img {
+      width: 100%;
+      height: 615px;
+      position: relative;
+      z-index: -1;
+      top: -120px;
+    }
+  }
+  .sections-container {
+    background-color: white;
+    margin-top: -180px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+}
+
+@media only screen and (max-width: $tablet) {
+  .home-container {
+    .sections-container {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+}

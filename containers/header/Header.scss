@@ -3,7 +3,11 @@
 .header {
   min-height: 70px;
   background-color: transparent;
-  color: $color-brand-grey;
+  color: white;
+  z-index: 10;
+  margin-left: 50px;
+  margin-right: 50px;
+
 
   .header-container {
     margin: 0 auto;
@@ -37,30 +41,43 @@
       border-top: none;
 
       li {
-        padding: $space-l $space-m;
+        padding: $space-l;
         letter-spacing: 1px;
         font-size: $font-size-menu;
         text-transform: uppercase;
         cursor: pointer;
 
-        &:hover {
-          opacity: 0.8;
+        &:first-of-type {
+          padding: $space-l $space-l $space-l 0px;
         }
 
         .icon {
           font-size: 16px;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
 
       .header-container-menu-desktop {
         display: flex;
         list-style: none;
-        padding-top: 20px;
+        float: right;
       }
 
       .header-container-menu-mobile {
         list-style: none;
-        padding-top: 20px;
+        padding-top: 10px;
+        clear: both;
+        position: absolute;
+        z-index:0;
+        width: 100%;
       }
     }
   }
@@ -76,10 +93,25 @@
     }
   }
 }
-
+@media only screen and (max-width: 1040px) and (min-width: $tablet) {
+  .header {
+    margin: 0px;
+    .header-container {
+      .header-container-menu {
+        li {
+          padding: $space-l $space-s;
+          &:first-of-type {
+            padding: $space-l $space-s $space-l 0px;
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: $tablet) {
 
   .header{
+    margin: 0px;
     .header-container{
       .header-container-logo {
         padding: 5px;
@@ -88,12 +120,11 @@
         display: block;
       }
       .header-container-menu {
-        padding-top: 65px;
-        margin-left: -50px;
+        padding-top: 80px;
+        margin-left: -30px;
 
         li {
-          padding: 25px 0px;
-          border-bottom: 1px solid grey;
+          padding: 25px 0;
 
           &:last-of-type {
             border-bottom: none;
@@ -107,3 +138,4 @@
     }
   }
 }
+
