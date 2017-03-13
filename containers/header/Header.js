@@ -1,7 +1,22 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './Header.scss';
 
 class Header extends Component {
+
+  componentDidMount() {
+    let lastScrollTop = 0;
+    $(window).on('scroll', () => {
+      const nowScrollTop = $(window).scrollTop();
+        if (nowScrollTop >= 300) {
+          $('.header-container').removeClass('header-transparent');
+          $('.header-container').css('width', '100%');
+          $('.header-container-menu-mobile').css('margin-right', '200px');
+        } else {
+          $('.header-container').addClass('header-transparent');
+        }
+        lastScrollTop = nowScrollTop;
+      });
+  }
 
   toggleMenu = (action) => {
 
@@ -13,63 +28,68 @@ class Header extends Component {
       case 'close':
         $(menu).slideUp();
         break;
-      default: break;
+      default:
+        break;
     }
   }
 
   render() {
     return (
         <header className="header">
-          <div className="header-container">
-
-            <div className="header-container-title">
+          <table className="header-container header-transparent">
+            <tr>
+            <table className="header-container-title">
+              <tr>
+                <td>
               <a className="header-container-logo" href="#home">
-                <img src="http://i68.tinypic.com/2el5ljq.png" />
+                <img src="http://i68.tinypic.com/2el5ljq.png"/>
               </a>
+                </td>
+                <td>
               <div className="header-container-button" onClick={() => this.toggleMenu('toggle')}>
-                <div className="icon icon-burger">
+                <div className="icon icon-arrow-down">
                 </div>
               </div>
-            </div>
+                </td>
+              </tr>
+            </table>
 
-            <div className="header-container-menu">
-                <ul className="header-container-menu-desktop">
-                  <li className="link">
-                    <span className="icon icon-info"></span> <a href="#about">Despre</a>
-                  </li>
-                  <li className="link">
-                    <span className="icon icon-sign-in"></span> <a href="#inscriere">Inscriere</a>
-                  </li>
-                  <li className="link">
-                    <span className="icon icon-calendar"></span> <a href="#program">Program</a>
-                  </li>
-                  <li className="link">
-                    <span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a>
-                  </li>
-                  <li className="link">
-                    <span className="icon icon-contact"></span> <a href="#contact">Contact</a>
-                  </li>
-                </ul>
+            <td>
+            <table className="header-container-menu">
+              <tr className="header-container-menu-desktop">
+                <td className="link">
+                  <span className="icon icon-info"></span> <a href="#about">Despre</a>
+                </td>
+                <td className="link">
+                  <span className="icon icon-calendar"></span> <a href="#program">Program</a>
+                </td>
+                <td className="link">
+                  <span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a>
+                </td>
+                <td className="link">
+                  <span className="icon icon-contact"></span> <a href="#contact">Contact</a>
+                </td>
+              </tr>
 
-                <ul className="header-container-menu-mobile" onMouseLeave={() => this.toggleMenu('close')} onClick={() => this.toggleMenu('close')}>
-                  <li className="link">
-                    <span className="icon icon-info"></span> <a href="#about">Despre</a>
-                  </li>
-                  <li className="link">
-                    <span className="icon icon-sign-in"></span> <a href="#inscriere">Inscriere</a>
-                  </li>
-                  <li className="link">
-                    <span className="icon icon-calendar"></span> <a href="#program">Program</a>
-                  </li>
-                  <li className="link">
-                    <span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a>
-                  </li>
-                  <li className="link">
-                    <span className="icon icon-contact"></span> <a href="#contact">Contact</a>
-                  </li>
-                </ul>
-            </div>
-          </div>
+              <table className="header-container-menu-mobile" onMouseLeave={() => this.toggleMenu('close')}
+                     onClick={() => this.toggleMenu('close')}>
+                <tr className="link">
+                  <td><span className="icon icon-info"></span> <a href="#about">Despre</a></td>
+                </tr>
+                <tr className="link">
+                  <td><span className="icon icon-calendar"></span> <a href="#program">Program</a></td>
+                </tr>
+                <tr className="link">
+                  <td><span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a></td>
+                </tr>
+                <tr className="link">
+                  <td><span className="icon icon-contact"></span> <a href="#contact">Contact</a></td>
+                </tr>
+              </table>
+            </table>
+            </td>
+            </tr>
+          </table>
         </header>
     );
   }

@@ -2,16 +2,20 @@
 
 .header {
   min-height: 70px;
-  background-color: transparent;
   color: white;
-  z-index: 10;
-  margin-left: 50px;
-  margin-right: 50px;
 
 
   .header-container {
+    z-index: 2;
     margin: 0 auto;
     padding: 0 15px;
+    position: fixed;
+    background-color: black;
+    padding-left: 50px;
+
+    &.header-transparent {
+      background-color: transparent;
+    }
 
     .header-container-logo {
       position: relative;
@@ -28,19 +32,16 @@
 
     .header-container-button {
       display: none;
-      position: relative;
-      float: right;
       padding: 26px 0;
       border: 0;
-      border-radius: 4px;
       background-color: transparent;
       cursor: pointer;
     }
 
     .header-container-menu {
-      border-top: none;
 
-      li {
+      margin-left: 100px;
+      td {
         padding: $space-l;
         letter-spacing: 1px;
         font-size: $font-size-menu;
@@ -65,23 +66,13 @@
         }
       }
 
-      .header-container-menu-desktop {
-        display: flex;
-        list-style: none;
-        float: right;
-      }
-
       .header-container-menu-mobile {
-        list-style: none;
-        padding-top: 10px;
-        clear: both;
-        position: absolute;
-        z-index:0;
-        width: 100%;
+        padding: 50px;
       }
     }
   }
 }
+
 @media only screen and (min-width: $tablet) {
   .header {
     .header-container {
@@ -93,12 +84,13 @@
     }
   }
 }
+
 @media only screen and (max-width: 1040px) and (min-width: $tablet) {
   .header {
     margin: 0px;
     .header-container {
       .header-container-menu {
-        li {
+        td {
           padding: $space-l $space-s;
           &:first-of-type {
             padding: $space-l $space-s $space-l 0px;
@@ -108,27 +100,25 @@
     }
   }
 }
+
 @media only screen and (max-width: $tablet) {
 
-  .header{
+  .header {
     margin: 0px;
-    .header-container{
+    .header-container {
       .header-container-logo {
+        width: 50%;
         padding: 5px;
       }
       .header-container-button {
         display: block;
       }
       .header-container-menu {
-        padding-top: 80px;
-        margin-left: -30px;
+        margin-left: -100px;
+        margin-top: 50px;
 
-        li {
-          padding: 25px 0;
-
-          &:last-of-type {
-            border-bottom: none;
-          }
+        td {
+          padding: 20px 0;
         }
 
         .header-container-menu-desktop, .header-container-menu-mobile {

@@ -9,6 +9,10 @@
     font-size: $font-size-title;
     padding: 20px 0;
     font-weight:bold;
+
+    span {
+      font-weight: lighter;
+    }
   }
 
   .about-container-description {
@@ -16,6 +20,7 @@
     padding: 20px 100px;
     color: darken(white, 50%);
     line-height: 24px;
+    font-weight: lighter;
   }
 }
 
@@ -25,26 +30,27 @@
   flex-wrap: wrap;
   flex-grow: 0;
   justify-content: space-around;
-}
 
-.card {
-  max-width: 200px;
-  max-height: 200px;
-  padding: 50px 100px;
-  text-align: center;
-  overflow: hidden;
-}
+  .card {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 50px 100px;
+    text-align: center;
+    overflow: hidden;
+  }
 
-.card img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  filter: grayscale(100%);
+  .card-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    filter: grayscale(100%);
 
-  &:hover {
-    filter: grayscale(50%);
+    &:hover {
+      filter: grayscale(50%);
+    }
   }
 }
+
 
 @media only screen and (max-width: 1400px) and (min-width: $tablet) {
   .about-container {
@@ -54,8 +60,9 @@
 @media only screen and (max-width: $tablet) {
   .about-container {
     padding: 20px 20px;
+
     .about-container-description {
-      padding: 20px 50px;
+      padding: 20px 20px;
     }
   }
 
