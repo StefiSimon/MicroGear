@@ -14,7 +14,7 @@ class Home extends Component {
             <div className="section section-basic">
               <div className="container">
                 <About />
-                <Schedule/>
+                <Schedule />
               </div>
             </div>
           </div>
