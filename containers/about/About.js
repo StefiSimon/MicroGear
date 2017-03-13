@@ -8,9 +8,9 @@ class Card extends Component{
         return(
             <div className="card">
                 <img className="card-image" src={imgSrc}/>
-                <div className="card__desc">
-                    <p className="card__name">{name}</p>
-                    <p className="card__role">{role}</p>
+                <div className="card-desc">
+                    <p className="card-desc__name">{name}</p>
+                    <p className="card-desc__role">{role}</p>
                 </div>
             </div>
         );
@@ -45,8 +45,7 @@ class About extends Component {
     render() {
         return(
             <div className="about-container" id="about">
-                <div className="about-container-title">Despre Noi</div>
-                <hr />
+              <div className="about-container-title">Despre Noi</div>
 
                 <div className="about-container-description">Cloudbase Solutions is a privately held company committed to cloud computing and interoperability, having two offices in Romania (Timisoara and Iasi) and one soon in the USA.
                 Our vision is to change the way the world sees the OpenStack community by opening it up to the Windows world. We believe in the opportunities given by the interaction between heterogeneous systems, which switches the focus from limited technological options to a broad range of choices available at the touch of a button.

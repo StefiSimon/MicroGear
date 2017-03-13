@@ -37,5 +37,11 @@
       content: $fa-var-address-book-o;
     }
   }
+
+  &.icon-arrow-down {
+    &:after {
+      content: $fa-arrow-down;
+    }
+  }
 }
 
