@@ -7,15 +7,15 @@ class Header extends Component {
     let lastScrollTop = 0;
     $(window).on('scroll', () => {
       const nowScrollTop = $(window).scrollTop();
-        if (nowScrollTop >= 300) {
-          $('.header-container').removeClass('header-transparent');
-          $('.header-container').css('width', '100%');
-          $('.header-container-menu-mobile').css('margin-right', '200px');
-        } else {
-          $('.header-container').addClass('header-transparent');
-        }
-        lastScrollTop = nowScrollTop;
-      });
+      if (nowScrollTop >= 300) {
+        $('.header-container').removeClass('header-transparent');
+        $('.header-container').css('width', '100%');
+        $('.header-container-menu-mobile').css('margin-right', '200px');
+      } else {
+        $('.header-container').addClass('header-transparent');
+      }
+      lastScrollTop = nowScrollTop;
+    });
   }
 
   toggleMenu = (action) => {
@@ -34,60 +34,72 @@ class Header extends Component {
   }
 
   render() {
+    const link = "https://docs.google.com/forms/d/e/1FAIpQLScH_B4RXuVMdS3F1Hs9VUDAlAicCxfWvELKsU7NiweBh_Az-Q/viewform";
     return (
         <header className="header">
           <table className="header-container header-transparent">
             <tr>
-            <table className="header-container-title">
-              <tr>
-                <td>
-              <a className="header-container-logo" href="#home">
-                <img src="http://i68.tinypic.com/2el5ljq.png"/>
-              </a>
-                </td>
-                <td>
-              <div className="header-container-button" onClick={() => this.toggleMenu('toggle')}>
-                <div className="icon icon-arrow-down">
-                </div>
-              </div>
-                </td>
-              </tr>
-            </table>
-
-            <td>
-            <table className="header-container-menu">
-              <tr className="header-container-menu-desktop">
-                <td className="link">
-                  <span className="icon icon-info"></span> <a href="#about">Despre</a>
-                </td>
-                <td className="link">
-                  <span className="icon icon-calendar"></span> <a href="#program">Program</a>
-                </td>
-                <td className="link">
-                  <span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a>
-                </td>
-                <td className="link">
-                  <span className="icon icon-contact"></span> <a href="#contact">Contact</a>
-                </td>
-              </tr>
-
-              <table className="header-container-menu-mobile" onMouseLeave={() => this.toggleMenu('close')}
-                     onClick={() => this.toggleMenu('close')}>
-                <tr className="link">
-                  <td><span className="icon icon-info"></span> <a href="#about">Despre</a></td>
-                </tr>
-                <tr className="link">
-                  <td><span className="icon icon-calendar"></span> <a href="#program">Program</a></td>
-                </tr>
-                <tr className="link">
-                  <td><span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a></td>
-                </tr>
-                <tr className="link">
-                  <td><span className="icon icon-contact"></span> <a href="#contact">Contact</a></td>
+              <table className="header-container-title">
+                <tr>
+                  <td>
+                    <a className="header-container-logo" href="#home">
+                      <img src="http://i68.tinypic.com/2el5ljq.png"/>
+                    </a>
+                  </td>
+                  <td>
+                    <div className="header-container-button" onClick={() => this.toggleMenu('toggle')}>
+                      <div className="icon icon-arrow-down">
+                      </div>
+                    </div>
+                  </td>
                 </tr>
               </table>
-            </table>
-            </td>
+
+              <td>
+                <table className="header-container-menu">
+                  <tr className="header-container-menu-desktop">
+                    <td className="link">
+                      <span className="icon icon-info"></span> <a href="#about">Despre</a>
+                    </td>
+                    <td className="link">
+                      <span className="icon icon-calendar"></span> <a href="#program">Program</a>
+                    </td>
+                    <td className="link">
+                      <span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a>
+                    </td>
+                    <td className="link">
+                      <span className="icon icon-contact"></span> <a href="#contact">Contact</a>
+                    </td>
+                    <td>
+                      <button className="button"><span className="icon icon-sign-in"></span> <a target="_blank" href={link}>Inscrie-te
+                        acum!</a></button>
+                    </td>
+                  </tr>
+
+                  <table className="header-container-menu-mobile" onMouseLeave={() => this.toggleMenu('close')}
+                         onClick={() => this.toggleMenu('close')}>
+                    <tr className="link">
+                      <td><span className="icon icon-info"></span> <a href="#about">Despre</a></td>
+                    </tr>
+                    <tr className="link">
+                      <td><span className="icon icon-calendar"></span> <a href="#program">Program</a></td>
+                    </tr>
+                    <tr className="link">
+                      <td><span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a></td>
+                    </tr>
+                    <tr className="link">
+                      <td><span className="icon icon-contact"></span> <a href="#contact">Contact</a></td>
+                    </tr>
+                    <tr className="button">
+                      <td>
+                        <button className="button">
+                          <span className="icon icon-sign-in"></span> <a target="_blank" href={link}>Inscrie-te acum!</a>
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+                </table>
+              </td>
             </tr>
           </table>
         </header>
