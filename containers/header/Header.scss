@@ -51,12 +51,17 @@
           padding: $space-l $space-l $space-l 0px;
         }
 
-        &:hover {
-          opacity: 0.8;
-        }
-
         .icon {
           font-size: 16px;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
 
