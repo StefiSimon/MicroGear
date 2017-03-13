@@ -1,60 +1,78 @@
 @import '../../styling/variables';
 
-.schedule__container {
-    padding: 50px;
-    background-color: white;
-    color: black;
+.schedule-container {
+  padding: 50px;
+  background-color: black;
+  color: white;
 }
 
-.schedule__para {
-    padding-left: 40px;
-    text-indent: 30px;
-}
-
-.schedule__title {
-    text-align: center;
-}
-
-.filler-photo {
-    overflow: hidden;
-    margin-top: 50px;
-    max-height: 500px;
-    display: flex;
-    justify-content: center;
-}
-.filler-photo img {
-}
-.timetable {
-    max-width: 30vw;
-}
-
-.clearfix {
-    clear: both;
+.schedule-container-title {
+  text-align: center;
+  font-size: $font-size-title;
+  padding: 50px 0;
+  font-weight: bold;
 }
 
 .timetable-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+
+  th {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+
+    span {
+      background-color: white;
+      padding: 30px 50px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.timetable__beginners {
+  .course {
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+
+  }
+}
+
+.timetable__advanced {
+  .course {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  }
 }
 
 .course {
-    background-color: grey;
+  width: 100%;
+  background-color: black;
+  padding: 50px 100px;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  .icon.icon-gears {
+    font-size: 40px;
+  }
+
 }
 
 .course__desc {
-    font-size: 1.2em;
-}
+  font-size: $font-size-desc;
+  padding: 20px;
 
-.course__nr {
-    color: blue;
-}
+  &.course__title {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 
-.course__details {
-    color: green;
 }
 
 .course__ora {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }

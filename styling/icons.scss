@@ -43,5 +43,11 @@
       content: $fa-arrow-down;
     }
   }
+
+  &.icon-gears {
+    &:after {
+      content: $fa-var-cogs;
+    }
+  }
 }
 
