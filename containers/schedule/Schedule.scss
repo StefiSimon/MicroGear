@@ -94,16 +94,9 @@
 @media only screen and (max-width: $tablet) {
   .schedule-container {
     padding: 10px;
-  }
 
-  .timetable-container {
-    th {
-      font-size: 18px;
-
-      div {
-        background-color: white;
-        border-radius: 5px;
-      }
+    .schedule-container-title {
+      padding: 30px;
     }
   }
 

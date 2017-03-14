@@ -80,7 +80,7 @@ class Gallery extends Component {
 
   render() {
     return (
-        <div className="gallery-container">
+        <div className="gallery-container" id="galerie">
           <div className="gallery-container-title">
             Galerie Foto
           </div>

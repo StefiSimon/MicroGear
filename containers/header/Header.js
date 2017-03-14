@@ -68,7 +68,7 @@ class Header extends Component {
                       <span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a>
                     </td>
                     <td className="link">
-                      <span className="icon icon-contact"></span> <a href="#contact">Contact</a>
+                      <span className="icon icon-photo"></span> <a href="#galerie">Galerie</a>
                     </td>
                     <td>
                       <button className="button"><span className="icon icon-sign-in"></span> <a target="_blank" href={link}>Inscrie-te
@@ -88,7 +88,7 @@ class Header extends Component {
                       <td><span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a></td>
                     </tr>
                     <tr className="link">
-                      <td><span className="icon icon-contact"></span> <a href="#contact">Contact</a></td>
+                      <td><span className="icon icon-photo"></span> <a href="#galerie">Galerie</a></td>
                     </tr>
                     <tr className="button">
                       <td>

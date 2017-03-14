@@ -73,5 +73,11 @@
       content: $fa-var-mail;
     }
   }
+
+  &.icon-photo {
+    &:after {
+      content: $fa-var-gallery;
+    }
+  }
 }
 

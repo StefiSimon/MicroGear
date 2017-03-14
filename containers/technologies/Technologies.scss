@@ -70,3 +70,27 @@
     }
   }
 }
+@media only screen and (max-width: $tablet) {
+  .tech-container {
+    padding: 10px;
+    .tech-container-desc {
+      padding: 0px;
+    }
+
+    .tech-table-container {
+      padding: 10px;
+
+      .tech-card {
+        width: 300px;
+
+        .tech-card__img {
+          img {
+            width: 200px;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+}

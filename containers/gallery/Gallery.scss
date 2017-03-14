@@ -72,3 +72,19 @@
   }
 
 }
+
+@media only screen and (max-width: $tablet) {
+  .gallery-container {
+    .gallery-container-desc {
+      padding: 20px;
+    }
+    .slider-content {
+      position: static;
+    }
+    .slide {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      float: none;
+    }
+  }
+}

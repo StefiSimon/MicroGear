@@ -39,7 +39,7 @@ class Technologies extends Component {
             {technologies.map((element, index) =>
                 (
 
-                    <div className="tech-table-container">
+                    <div className="tech-table-container" id="tehnologii">
                       <div className="tech-card">
                         <div className="tech-card__img">
                           <img src={element.imgSrc}/>
