@@ -1,0 +1,73 @@
+@import '../../styling/variables';
+
+.gallery-container {
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+  color: white;
+
+  .gallery-container-title {
+    font-size: $font-size-title;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+
+  .gallery-container-desc {
+    font-size: $font-size-desc;
+    padding: 20px 100px;
+    color: gray;
+    line-height: 24px;
+  }
+
+  /* Slider ----------- */
+  .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 800px;
+    min-height: 400px;
+    margin: 0 auto;
+  }
+  .slider-container img {
+    max-height: 400px;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(20%);
+    }
+  }
+  .slider-content {
+    width: 9999em;
+    position: relative;
+    left: 0;
+  }
+  .slide {
+    position: relative;
+    width: 60em;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    background: #eee;
+    border-right: 3px solid #aaa;
+    border-left: 3px solid #aaa;
+    float: left;
+  }
+  .slider-container .icon {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    color: $color-brand-orange;
+    -webkit-transition: all .3s ease;
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+
+    &:hover {
+      color: darken($color-brand-orange,20%);
+    }
+
+    &.icon-next {
+      right:0;
+    }
+  }
+
+}

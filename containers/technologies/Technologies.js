@@ -51,7 +51,7 @@ class Technologies extends Component {
 
   render() {
     return (
-        <div className="tech-container">
+        <div className="tech-container" id="tehnologii">
           <div className="tech-container-title">
             Tehnologii Folosite
           </div>

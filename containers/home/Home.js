@@ -3,6 +3,7 @@ import './Home.scss';
 import About from '../about/About';
 import Schedule from '../schedule/Schedule';
 import Technologies from '../technologies/Technologies';
+import Gallery from '../gallery/Gallery';
 
 class Home extends Component {
   render() {
@@ -17,6 +18,7 @@ class Home extends Component {
                 <About />
                 <Schedule />
                 <Technologies/>
+                <Gallery />
               </div>
             </div>
           </div>
