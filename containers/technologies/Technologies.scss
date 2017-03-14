@@ -1,0 +1,68 @@
+@import '../../styling/variables';
+
+.tech-container {
+  padding: 50px;
+  text-align: center;
+
+  .tech-container-title {
+    font-size: $font-size-title;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+
+  .tech-container-desc {
+    font-size: $font-size-desc;
+    padding: 20px 100px;
+    color: darken(white, 50%);
+    line-height: 24px;
+    font-weight: lighter;
+  }
+
+  .tech-table-container {
+    padding: 50px 25px;
+    display: inline-block;
+
+    .tech-card {
+      position: relative;
+      max-width: 400px;
+      border-radius: 6px;
+      color: rgba(0, 0, 0, 0.87);
+      background-color: white;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+    .tech-card__img {
+      position: relative;
+      width: 90%;
+      height: 60%;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 6px;
+      box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+      img {
+        width: 300px;
+        height: 200px;
+      }
+
+    }
+
+    .tech-card__desc {
+      padding: 15px 30px;
+      text-align: left;
+      font-size: $font-size-desc;
+
+      .tech-name {
+        text-transform: uppercase;
+        padding: 15px 0px;
+        color: $color-brand-orange;
+        font-weight: bold;
+      }
+
+      .tech-details {
+        color: darken(white, 50%);
+      }
+    }
+  }
+}
