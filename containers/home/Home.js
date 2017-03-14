@@ -4,6 +4,7 @@ import About from '../about/About';
 import Schedule from '../schedule/Schedule';
 import Technologies from '../technologies/Technologies';
 import Gallery from '../gallery/Gallery';
+import Footer from '../footer/Footer';
 
 class Home extends Component {
   render() {
@@ -16,12 +17,16 @@ class Home extends Component {
             <div className="section section-basic">
               <div className="container">
                 <About />
+                <div className="orange"></div>
                 <Schedule />
+                <div className="orange"></div>
                 <Technologies/>
+                <div className="orange"></div>
                 <Gallery />
               </div>
             </div>
           </div>
+          <Footer />
         </div>
     );
   }

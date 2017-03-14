@@ -61,5 +61,17 @@
       content: $fa-var-next;
     }
   }
+
+  &.icon-facebook {
+    &:after {
+      content: $fa-var-facebook;
+    }
+  }
+
+  &.icon-email {
+    &:after {
+      content: $fa-var-mail;
+    }
+  }
 }
 

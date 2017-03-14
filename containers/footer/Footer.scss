@@ -1,0 +1,17 @@
+@import '../../styling/variables';
+
+.footer-container {
+  background-color: $color-brand-orange;
+  color: black;
+  padding: 10px 50px;
+
+  .footer-container-image img {
+    width: 100px;
+    height: auto;
+    padding-right: 50px;
+  }
+
+  .footer-logo-text {
+    font-size: $font-size-desc;
+  }
+}
