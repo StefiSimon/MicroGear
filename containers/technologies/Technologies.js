@@ -3,48 +3,25 @@ import React, {Component} from 'react';
 
 const technologies = [
   {
-    name: "Product Name",
-    imgSrc: "http://i63.tinypic.com/2qtisrm.png",
-    description: "Short description of the product here" +
-    "Short description of the product here" +
-    "Short description of the product here"
+    name: "Arduino",
+    imgSrc: "http://i68.tinypic.com/18dn9s.jpg",
+    description: "Platforma Arduino este open-source si usor de folosit"
   },
   {
-    name: "Product Name",
-    imgSrc: "http://i63.tinypic.com/2qtisrm.png",
-    description: "Short description of the product here" +
-    "Short description of the product here" +
-    "Short description of the product here"
+    name: "Senzoristica",
+    imgSrc: "http://i63.tinypic.com/bjaoer.png",
+    description: "Adunarea informatiilor despre mediul inconjurator"
   },
   {
-    name: "Product Name",
-    imgSrc: "http://i63.tinypic.com/2qtisrm.png",
-    description: "Short description of the product here" +
-    "Short description of the product here" +
-    "Short description of the product here"
+    name: "Robotica",
+    imgSrc: "http://i65.tinypic.com/2q80jd4.jpg",
+    description: "Cu pasi mici ne indreptam spre viitor"
   },
   {
-    name: "Product Name",
-    imgSrc: "http://i63.tinypic.com/2qtisrm.png",
-    description: "Short description of the product here" +
-    "Short description of the product here" +
-    "Short description of the product here"
-  },
-  {
-    name: "Product Name",
-    imgSrc: "http://i63.tinypic.com/2qtisrm.png",
-    description: "Short description of the product here" +
-    "Short description of the product here" +
-    "Short description of the product here"
-  },
-  {
-    name: "Product Name",
-    imgSrc: "http://i63.tinypic.com/2qtisrm.png",
-    description: "Short description of the product here" +
-    "Short description of the product here" +
-    "Short description of the product here"
-  },
-
+    name: "3D printing",
+    imgSrc: "http://i66.tinypic.com/296g1gh.png",
+    description: "Mai mult decat un hobby"
+  }
 ];
 
 class Technologies extends Component {
@@ -56,29 +33,29 @@ class Technologies extends Component {
             Tehnologii Folosite
           </div>
           <div className="tech-container-desc">
-            Short description of the used technologies
+            Cateva dintre tehnologiile pe care le vom folosi in cadrul cursurilor
           </div>
           <div>
-              {technologies.map((element, index) =>
-                  (
+            {technologies.map((element, index) =>
+                (
 
-                        <div className="tech-table-container">
-                          <div className="tech-card">
-                            <div className="tech-card__img">
-                              <img src={element.imgSrc}/>
-                            </div>
-                            <div className="tech-card__desc">
-                              <div className="tech-name">
-                                {element.name}
-                              </div>
-                              <div className="tech-details">
-                                {element.description}
-                              </div>
-                            </div>
+                    <div className="tech-table-container">
+                      <div className="tech-card">
+                        <div className="tech-card__img">
+                          <img src={element.imgSrc}/>
+                        </div>
+                        <div className="tech-card__desc">
+                          <div className="tech-name">
+                            {element.name}
+                          </div>
+                          <div className="tech-details">
+                            {element.description}
                           </div>
                         </div>
-                  )
-              )}
+                      </div>
+                    </div>
+                )
+            )}
           </div>
         </div>
     );

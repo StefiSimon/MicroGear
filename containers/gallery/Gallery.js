@@ -3,11 +3,35 @@ import './Gallery.scss';
 
 const images = [
   {
-    src: "http://i63.tinypic.com/2qtisrm.png",
+    src: "http://i64.tinypic.com/rvhhxi.jpg",
   },
   {
-    src: "http://cdn1.aradon.ro/2014/11/Sfantul-Andrei.jpg",
+    src: "http://i66.tinypic.com/20u7leg.jpg",
   },
+  {
+    src: "http://i67.tinypic.com/30u95zb.jpg",
+  },
+  {
+    src: "http://i63.tinypic.com/116p66p.jpg",
+  },
+  {
+    src: "http://i66.tinypic.com/23jg4f5.jpg",
+  },
+  {
+    src: "http://i68.tinypic.com/2q3c6lt.jpg",
+  },
+  {
+    src: "http://i63.tinypic.com/15of94y.jpg",
+  },
+  {
+    src: "http://i64.tinypic.com/21o8mso.jpg",
+  },
+  {
+    src: "http://i63.tinypic.com/x1bnuh.jpg",
+  },
+  {
+    src: "http://i63.tinypic.com/2dtruxl.jpg",
+  }
 ]
 
 

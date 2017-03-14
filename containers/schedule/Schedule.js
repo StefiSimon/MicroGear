@@ -2,48 +2,46 @@ import React, {Component} from 'react';
 import './Schedule.scss';
 
 
-const makeCourse = (nr, desc, tip, ora, data, detalii) => {
-  return {nr, desc, tip, ora, data, detalii: detalii || "fara detalii"};
+const makeCourse = (desc, data, ora) => {
+  return { desc, data, ora };
 }
 
 const beginners = [
-  makeCourse("1", "Curs Pilot", "Incepatori", "32 Febr", "10:00 - 11:00",
-      "Meet the team"),
-  makeCourse("2", "Aprofundare limbaj C", "Incepatori", "33 Febr", "11:00 - 12:00",
-      "Fundamente (variable, structura unui program)"),
-  makeCourse("3", "LCD Text", "Incepatori", "34 Febr", "13:00 - 17:00"),
-  makeCourse("4", "Timpul Descopera Toate", "Incepatori", "34 Febr", "13:00 - 17:00"),
-  makeCourse("5", "Curs printare 3D la Hackerspace", "Incepatori", "34 Febr", "13:00 - 17:00")
+  makeCourse("Curs Pilot", "32 Febr", "10:00 - 11:00"),
+  makeCourse("Aprofundare limbaj Arduino", "33 Febr", "11:00 - 12:00"),
+  makeCourse("LCD Text", "34 Febr", "13:00 - 17:00"),
+  makeCourse("Multifunction Shield", "34 Febr", "13:00 - 17:00"),
+  makeCourse("3D Printing", "34 Febr", "13:00 - 17:00")
 ];
 const advanced1 = [
-  makeCourse("1", "Curs pilot", "Avansati", "32 Febr", "10:00 - 11:00"),
-  makeCourse("2", "Să ne aprindem beculetele", "Avansati", "33 Febr", "11:00 - 12:00"),
-  makeCourse("3", "Senzor ultrasonic", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("4", "Senzor temperatura + fotorezistor", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("5", "Matrice led + modul joystick", "Avansati", "34 Febr", "13:00 - 17:00")
+  makeCourse("Curs pilot", "32 Febr", "10:00 - 11:00"),
+  makeCourse("Să ne aprindem beculetele", "33 Febr", "11:00 - 12:00"),
+  makeCourse("Senzor ultrasonic", "34 Febr", "13:00 - 17:00"),
+  makeCourse("Sunet si lumina", "34 Febr", "13:00 - 17:00"),
+  makeCourse("Matrice LED si joystick", "34 Febr", "13:00 - 17:00")
 ];
 const advanced2 = [
-  makeCourse("6", "Decolarea!", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("7", "Senzor sunet + aplicație pian", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("8", "IR Sensor", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("9", "Curs printare 3D la Hackerspace", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("10", "Q&A", "Avansati", "34 Febr", "13:00 - 17:00")
+  makeCourse("Decolarea!", "34 Febr", "13:00 - 17:00"),
+  makeCourse("Senzor sunet Infrared", "34 Febr", "13:00 - 17:00"),
+  makeCourse("IR Sensor", "34 Febr", "13:00 - 17:00"),
+  makeCourse("3D Printing", "34 Febr", "13:00 - 17:00"),
+  makeCourse("Q&A", "34 Febr", "13:00 - 17:00")
 ]
 
 class Course extends Component {
   render() {
-    const {nr, desc, tip, data, ora, detalii} = this.props.data;
+    const { desc, ora, data} = this.props.data;
     return (
         <table className="course">
           <tr className="icon icon-gears"></tr>
           <tr className="course__desc course__title">{desc}</tr>
-          <tr className="course__desc course__detalii">{detalii}</tr>
+          <tr className="course__desc course__detalii">{data}, {ora}</tr>
         </table>
     );
   }
 }
 
-const dataToCourse = (elem) => <Course data={elem} key={elem.tip + elem.nr}/>;
+const dataToCourse = (elem) => <Course data={elem} />;
 
 class Schedule extends Component {
   render() {

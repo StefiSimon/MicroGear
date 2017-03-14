@@ -26,7 +26,7 @@
 
     .tech-card {
       position: relative;
-      max-width: 400px;
+      width: 400px;
       border-radius: 6px;
       color: rgba(0, 0, 0, 0.87);
       background-color: white;
@@ -40,10 +40,14 @@
       margin-right: 15px;
       border-radius: 6px;
       box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-
+      filter: grayscale(100%);
       img {
-        width: 300px;
-        height: 200px;
+        width: 350px;
+        height: 220px;
+      }
+
+      &:hover {
+        filter: grayscale(50%);
       }
 
     }
