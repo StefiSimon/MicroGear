@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Home.scss';
 import About from '../about/About';
 import Schedule from '../schedule/Schedule';
+import Technologies from '../technologies/Technologies';
 
 class Home extends Component {
   render() {
@@ -15,6 +16,7 @@ class Home extends Component {
               <div className="container">
                 <About />
                 <Schedule />
+                <Technologies/>
               </div>
             </div>
           </div>

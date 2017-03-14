@@ -4,7 +4,6 @@
   min-height: 70px;
   color: white;
 
-
   .header-container {
     z-index: 2;
     margin: 0 auto;
@@ -41,6 +40,18 @@
     .header-container-menu {
 
       margin-left: 100px;
+
+      button.button {
+        background-color: $color-brand-orange;
+        color: white;
+        border-radius: 30px;
+        font-size: $font-size-menu;
+        padding: 12px;
+        text-transform: uppercase;
+        border: none;
+        letter-spacing: 1px;
+      }
+
       td {
         padding: $space-l;
         letter-spacing: 1px;
@@ -59,9 +70,11 @@
         a {
           text-decoration: none;
           color: white;
-
           &:hover {
-            opacity: 0.8;
+            color: $color-brand-blue;
+            &:last-of-type {
+              color: white;
+            }
           }
         }
       }

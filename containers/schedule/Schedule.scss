@@ -20,15 +20,16 @@
 
   th {
     text-transform: uppercase;
-    font-weight: bold;
-    color: black;
+    color: white;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
 
-    span {
-      background-color: white;
-      padding: 30px 50px;
+    div {
       border-radius: 5px;
+      padding: 20px 50px;
+      display: initial;
+      font-weight: 100;
+      border: 1px solid white;
     }
   }
 }
@@ -37,20 +38,32 @@
   .course {
     border-right: 1px solid rgba(255, 255, 255, 0.35);
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-
   }
 }
 
-.timetable__advanced {
+.timetable__advanced-first {
+  .course {
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  }
+}
+
+.timetable__advanced-second {
   .course {
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   }
 }
 
 .course {
-  width: 100%;
   background-color: black;
-  padding: 50px 100px;
+  padding: 10px 50px;
+  width: 100%;
+  height: 250px;
+  max-width:400px;
+
+  &:first-of-type {
+    margin-top: 50px;
+  }
 
   &:last-of-type {
     border-bottom: none;
@@ -58,6 +71,7 @@
 
   .icon.icon-gears {
     font-size: 40px;
+    color: $color-brand-orange;
   }
 
 }
@@ -68,11 +82,32 @@
 
   &.course__title {
     font-size: 18px;
-    text-transform: uppercase;
+    font-weight:bold;
   }
 
 }
 
 .course__ora {
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: $tablet) {
+  .schedule-container {
+    padding: 10px;
+  }
+
+  .timetable-container {
+    th {
+      font-size: 18px;
+
+      div {
+        background-color: white;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .course {
+    padding: 10px 20px;
+  }
 }

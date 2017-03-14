@@ -49,5 +49,17 @@
       content: $fa-var-cogs;
     }
   }
+
+  &.icon-prev {
+    &:after {
+      content: $fa-var-prev;
+    }
+  }
+
+  &.icon-next {
+    &:after {
+      content: $fa-var-next;
+    }
+  }
 }
 

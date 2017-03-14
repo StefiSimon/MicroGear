@@ -13,25 +13,22 @@ const beginners = [
       "Fundamente (variable, structura unui program)"),
   makeCourse("3", "LCD Text", "Incepatori", "34 Febr", "13:00 - 17:00"),
   makeCourse("4", "Timpul Descopera Toate", "Incepatori", "34 Febr", "13:00 - 17:00"),
-  makeCourse("5", "Curs printare 3D la Hackerspace", "Incepatori", "34 Febr", "13:00 - 17:00"),
+  makeCourse("5", "Curs printare 3D la Hackerspace", "Incepatori", "34 Febr", "13:00 - 17:00")
+];
+const advanced1 = [
+  makeCourse("1", "Curs pilot", "Avansati", "32 Febr", "10:00 - 11:00"),
+  makeCourse("2", "Să ne aprindem beculetele", "Avansati", "33 Febr", "11:00 - 12:00"),
+  makeCourse("3", "Senzor ultrasonic", "Avansati", "34 Febr", "13:00 - 17:00"),
+  makeCourse("4", "Senzor temperatura + fotorezistor", "Avansati", "34 Febr", "13:00 - 17:00"),
+  makeCourse("5", "Matrice led + modul joystick", "Avansati", "34 Febr", "13:00 - 17:00")
+];
+const advanced2 = [
   makeCourse("6", "Decolarea!", "Avansati", "34 Febr", "13:00 - 17:00"),
   makeCourse("7", "Senzor sunet + aplicație pian", "Avansati", "34 Febr", "13:00 - 17:00"),
   makeCourse("8", "IR Sensor", "Avansati", "34 Febr", "13:00 - 17:00"),
   makeCourse("9", "Curs printare 3D la Hackerspace", "Avansati", "34 Febr", "13:00 - 17:00"),
   makeCourse("10", "Q&A", "Avansati", "34 Febr", "13:00 - 17:00")
-];
-const advanced = [
-  makeCourse("1","Curs pilot", "Avansati", "32 Febr", "10:00 - 11:00"),
-  makeCourse("2", "Să ne aprindem beculetele", "Avansati", "33 Febr", "11:00 - 12:00"),
-  makeCourse("3", "Senzor ultrasonic", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("4", "Senzor temperatura + fotorezistor", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("5", "Matrice led + modul joystick", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("6", "Decolarea!", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("7", "Senzor sunet + aplicație pian", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("8", "IR Sensor", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("9", "Curs printare 3D la Hackerspace", "Avansati", "34 Febr", "13:00 - 17:00"),
-  makeCourse("10", "Q&A", "Avansati", "34 Febr", "13:00 - 17:00"),
-];
+]
 
 class Course extends Component {
   render() {
@@ -39,12 +36,8 @@ class Course extends Component {
     return (
         <table className="course">
           <tr className="icon icon-gears"></tr>
-          <br />
-          <br />
           <tr className="course__desc course__title">{desc}</tr>
           <tr className="course__desc course__detalii">{detalii}</tr>
-          <tr className="course__desc course__data">{data}</tr>
-          <tr className="course__desc course__ora">{ora}</tr>
         </table>
     );
   }
@@ -60,10 +53,13 @@ class Schedule extends Component {
 
           <table className="timetable-container">
             <th>
-                <span>Incepatori</span>
+              <div>Incepatori</div>
             </th>
             <th>
-              <span>Avansati</span>
+              <div>Avansati I</div>
+            </th>
+            <th>
+              <div>Avansati II</div>
             </th>
             <tr>
               <td>
@@ -72,8 +68,13 @@ class Schedule extends Component {
                 </div>
               </td>
               <td>
-                <div className="timetable timetable__advanced">
-                  {advanced.map(dataToCourse)}
+                <div className="timetable timetable__advanced-first">
+                  {advanced1.map(dataToCourse)}
+                </div>
+              </td>
+              <td>
+                <div className="timetable timetable__advanced-second">
+                  {advanced2.map(dataToCourse)}
                 </div>
               </td>
             </tr>
