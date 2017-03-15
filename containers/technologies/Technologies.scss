@@ -5,32 +5,32 @@
   text-align: center;
 
   .tech-container-title {
-    font-size: $font-size-title;
-    text-align: center;
-    justify-content: center;
-    font-weight: bold;
     padding: 20px 0;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: $font-size-title;
   }
 
   .tech-container-desc {
-    font-size: $font-size-desc;
     padding: 20px 100px;
-    color: darken(white, 50%);
     line-height: 24px;
+    font-size: $font-size-desc;
     font-weight: lighter;
+    color: darken(white, 50%);
   }
 
   .tech-table-container {
-    padding: 50px 25px;
     display: inline-block;
+    padding: 50px 25px;
 
     .tech-card {
       position: relative;
       width: 400px;
       border-radius: 6px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
       color: rgba(0, 0, 0, 0.87);
       background-color: white;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     }
     .tech-card__img {
       position: relative;
@@ -58,10 +58,10 @@
       font-size: $font-size-desc;
 
       .tech-name {
-        text-transform: uppercase;
         padding: 15px 0px;
-        color: $color-brand-orange;
+        text-transform: uppercase;
         font-weight: bold;
+        color: $color-brand-orange;
       }
 
       .tech-details {

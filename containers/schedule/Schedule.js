@@ -51,13 +51,13 @@ class Schedule extends Component {
 
           <table className="timetable-container">
             <th>
-              <div>Incepatori</div>
+              <div className="timetable-container-title">Incepatori</div>
             </th>
             <th>
-              <div>Avansati I</div>
+              <div className="timetable-container-title">Avansati I</div>
             </th>
             <th>
-              <div>Avansati II</div>
+              <div className="timetable-container-title">Avansati II</div>
             </th>
             <tr>
               <td>
@@ -72,11 +72,22 @@ class Schedule extends Component {
               </td>
               <td>
                 <div className="timetable timetable__advanced-second">
-                  {advanced2.map(dataToCourse)}
+                  {advanced1.map(dataToCourse)}
                 </div>
               </td>
             </tr>
           </table>
+          <div className="timetable-container-mobile">
+            <div className="timetable-container-mobile-title">Incepatori</div>
+            <div className="timetable timetable__beginners">
+              {beginners.map(dataToCourse)}
+            </div>
+            <div className="timetable-container-mobile-title">Avansati</div>
+            <div className="timetable timetable__advanced">
+              {advanced1.map(dataToCourse)}
+              {advanced2.map(dataToCourse)}
+            </div>
+          </div>
         </div>
 
     );

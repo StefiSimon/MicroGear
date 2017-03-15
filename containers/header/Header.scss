@@ -5,12 +5,12 @@
   color: white;
 
   .header-container {
+    position: fixed;
     z-index: 2;
     margin: 0 auto;
     padding: 0 15px;
-    position: fixed;
-    background-color: black;
     padding-left: 50px;
+    background-color: black;;
 
     &.header-transparent {
       background-color: transparent;
@@ -39,22 +39,27 @@
 
     .header-container-menu {
 
-      button.button {
+      button.header-container-menu-button {
+        padding: 12px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        font-size: $font-size-menu;
         background-color: $color-brand-orange;
         color: white;
-        border-radius: 30px;
-        font-size: $font-size-menu;
-        padding: 12px;
-        text-transform: uppercase;
-        border: none;
-        letter-spacing: 1px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
 
-      td {
+      .header-container-menu-link {
         padding: $space-l;
+        text-transform: uppercase;
         letter-spacing: 1px;
         font-size: $font-size-menu;
-        text-transform: uppercase;
         cursor: pointer;
 
         &:first-of-type {
@@ -68,12 +73,6 @@
         a {
           text-decoration: none;
           color: white;
-          &:hover {
-            color: $color-brand-blue;
-            &:last-of-type {
-              color: white;
-            }
-          }
         }
       }
 
@@ -96,15 +95,15 @@
   }
 }
 
-@media only screen and (max-width: 1040px) and (min-width: $tablet) {
+@media only screen and (max-width: 980px) and (min-width: $tablet) {
   .header {
     margin: 0px;
     .header-container {
       .header-container-menu {
-        td {
-          padding: $space-l $space-s;
+        .header-container-menu-link {
+          padding: $space-s;
           &:first-of-type {
-            padding: $space-l $space-s $space-l 0px;
+            padding: $space-s $space-s $space-s $space-l;
           }
         }
       }
@@ -128,8 +127,8 @@
         margin-left: -100px;
         margin-top: 50px;
 
-        td {
-          padding: 20px 0;
+        .header-container-menu-link {
+          padding: 10px 0;
         }
 
         .header-container-menu-desktop, .header-container-menu-mobile {

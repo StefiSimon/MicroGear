@@ -58,41 +58,41 @@ class Header extends Component {
               <td>
                 <table className="header-container-menu">
                   <tr className="header-container-menu-desktop">
-                    <td className="link">
+                    <td className="header-container-menu-link">
                       <span className="icon icon-info"></span> <a href="#about">Despre</a>
                     </td>
-                    <td className="link">
+                    <td className="header-container-menu-link">
                       <span className="icon icon-calendar"></span> <a href="#program">Program</a>
                     </td>
-                    <td className="link">
+                    <td className="header-container-menu-link">
                       <span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a>
                     </td>
-                    <td className="link">
+                    <td className="header-container-menu-link">
                       <span className="icon icon-photo"></span> <a href="#galerie">Galerie</a>
                     </td>
                     <td>
-                      <button className="button"><span className="icon icon-sign-in"></span> <a target="_blank" href={link}>Inscrie-te
+                      <button className="header-container-menu-button"><span className="icon icon-sign-in"></span> <a target="_blank" href={link}>Inscrie-te
                         acum!</a></button>
                     </td>
                   </tr>
 
                   <table className="header-container-menu-mobile" onMouseLeave={() => this.toggleMenu('close')}
                          onClick={() => this.toggleMenu('close')}>
-                    <tr className="link">
-                      <td><span className="icon icon-info"></span> <a href="#about">Despre</a></td>
+                    <tr>
+                      <td className="header-container-menu-link"><span className="icon icon-info"></span> <a href="#about">Despre</a></td>
                     </tr>
-                    <tr className="link">
-                      <td><span className="icon icon-calendar"></span> <a href="#program">Program</a></td>
+                    <tr>
+                      <td className="header-container-menu-link"><span className="icon icon-calendar"></span> <a href="#program">Program</a></td>
                     </tr>
-                    <tr className="link">
-                      <td><span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a></td>
+                    <tr>
+                      <td className="header-container-menu-link"><span className="icon icon-tools"></span> <a href="#tehnologii">Tehnologii</a></td>
                     </tr>
-                    <tr className="link">
-                      <td><span className="icon icon-photo"></span> <a href="#galerie">Galerie</a></td>
+                    <tr>
+                      <td className="header-container-menu-link"><span className="icon icon-photo"></span> <a href="#galerie">Galerie</a></td>
                     </tr>
-                    <tr className="button">
-                      <td>
-                        <button className="button">
+                    <tr>
+                      <td className="header-container-menu-link">
+                        <button className="header-container-menu-button">
                           <span className="icon icon-sign-in"></span> <a target="_blank" href={link}>Inscrie-te acum!</a>
                         </button>
                       </td>

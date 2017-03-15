@@ -1,32 +1,32 @@
 @import '../../styling/variables';
 
 .gallery-container {
-  background-color: black;
-  text-align: center;
   padding: 50px;
+  text-align: center;
+  background-color: black;
   color: white;
 
   .gallery-container-title {
-    font-size: $font-size-title;
-    font-weight: bold;
     padding: 20px 0;
+    font-weight: bold;
+    font-size: $font-size-title;
   }
 
   .gallery-container-desc {
-    font-size: $font-size-desc;
     padding: 20px 100px;
-    color: gray;
     line-height: 24px;
+    font-size: $font-size-desc;
+    color: gray;
   }
 
   /* Slider ----------- */
   .slider-container {
+    margin: 0 auto;
     position: relative;
     width: 100%;
     overflow: hidden;
     max-width: 800px;
     min-height: 400px;
-    margin: 0 auto;
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   }
   .slider-container img {
@@ -38,36 +38,35 @@
     }
   }
   .slider-content {
-    width: 9999em;
     position: relative;
+    width: 9999em;
     left: 0;
   }
   .slide {
     position: relative;
-    width: 60em;
+    float: left;
     margin-bottom: -99999px;
     padding-bottom: 99999px;
-    background: #eee;
+    width: 60em;
     border-right: 3px solid #aaa;
     border-left: 3px solid #aaa;
-    float: left;
   }
   .slider-container .icon {
+    display: none;
     position: absolute;
     top: 50%;
     z-index: 3;
     color: $color-brand-orange;
     -webkit-transition: all .3s ease;
-    display: none;
     cursor: pointer;
     font-size: 30px;
 
     &:hover {
-      color: darken($color-brand-orange,20%);
+      color: darken($color-brand-orange, 20%);
     }
 
     &.icon-next {
-      right:0;
+      right: 0;
     }
   }
 

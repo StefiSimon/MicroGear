@@ -1,17 +1,25 @@
 @import '../../styling/variables';
 
 .footer-container {
+  padding: 10px 50px;
   background-color: $color-brand-orange;
   color: black;
-  padding: 10px 50px;
 
   .footer-container-image img {
+    padding-right: 50px;
     width: 100px;
     height: auto;
-    padding-right: 50px;
   }
 
   .footer-logo-text {
     font-size: $font-size-desc;
+  }
+
+  .footer-icon {
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
   }
 }
