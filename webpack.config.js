@@ -5,8 +5,6 @@ module.exports = {
   entry: {
     index: [
       './main.js',
-      'webpack-hot-middleware/client?http://localhost:3000',
-      'webpack/hot/only-dev-server',
     ]
 },
   devtool: 'source-map',
@@ -19,7 +17,7 @@ module.exports = {
     loaders: [
     {
       test: /\.jsx$/,
-      loaders: ['react-hot','babel-loader'],
+      loaders: ['babel-loader'],
       exclude: /node_modules/,
     },
       {
@@ -40,7 +38,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
