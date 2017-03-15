@@ -7,7 +7,7 @@ class Header extends Component {
     let lastScrollTop = 0;
     $(window).on('scroll', () => {
       const nowScrollTop = $(window).scrollTop();
-      if (nowScrollTop >= 300) {
+      if (nowScrollTop >= 200) {
         $('.header-container').removeClass('header-transparent');
         $('.header-container').css('width', '100%');
         $('.header-container-menu-mobile').css('margin-right', '200px');

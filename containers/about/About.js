@@ -44,7 +44,7 @@ const dummy = [
   },
   {
     name: "Stefania Simon",
-    imgSrc:"http://i64.tinypic.com/2hxu7at.jpg",
+    imgSrc:"http://i64.tinypic.com/sl02sh.jpg",
     role: "Voluntar"
   }
 ];
