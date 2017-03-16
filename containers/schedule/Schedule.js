@@ -2,40 +2,40 @@ import React, {Component} from 'react';
 import './Schedule.scss';
 
 
-const makeCourse = (desc, data, ora) => {
-  return { desc, data, ora };
+const makeCourse = (desc, data) => {
+  return { desc, data };
 }
 
 const beginners = [
-  makeCourse("Curs Pilot", "32 Febr", "10:00 - 11:00"),
-  makeCourse("Aprofundare limbaj Arduino", "33 Febr", "11:00 - 12:00"),
-  makeCourse("LCD Text", "34 Febr", "13:00 - 17:00"),
-  makeCourse("Multifunction Shield", "34 Febr", "13:00 - 17:00"),
-  makeCourse("3D Printing", "34 Febr", "13:00 - 17:00")
+  makeCourse("Curs Pilot", "31 Martie - 2 Aprilie"),
+  makeCourse("Aprofundare limbaj Arduino", "7 - 9 Aprilie"),
+  makeCourse("LCD Text", "14 - 16 Aprilie"),
+  makeCourse("Multifunction Shield", "21 - 23 Aprilie"),
+  makeCourse("3D Printing", "28 - 30 Aprilie")
 ];
 const advanced1 = [
-  makeCourse("Curs pilot", "32 Febr", "10:00 - 11:00"),
-  makeCourse("Să ne aprindem beculetele", "33 Febr", "11:00 - 12:00"),
-  makeCourse("Senzor ultrasonic", "34 Febr", "13:00 - 17:00"),
-  makeCourse("Sunet si lumina", "34 Febr", "13:00 - 17:00"),
-  makeCourse("Matrice LED si joystick", "34 Febr", "13:00 - 17:00")
+  makeCourse("Curs pilot", "31 Martie - 2 Aprilie"),
+  makeCourse("Să ne aprindem beculetele", "31 Martie - 2 Aprilie"),
+  makeCourse("Senzor ultrasonic", "7 - 9 Aprilie"),
+  makeCourse("Sunet si lumina", "7 - 9 Aprilie"),
+  makeCourse("Matrice LED si joystick", "14 - 16 Aprilie")
 ];
 const advanced2 = [
-  makeCourse("Decolarea!", "34 Febr", "13:00 - 17:00"),
-  makeCourse("Senzor sunet Infrared", "34 Febr", "13:00 - 17:00"),
-  makeCourse("IR Sensor", "34 Febr", "13:00 - 17:00"),
-  makeCourse("3D Printing", "34 Febr", "13:00 - 17:00"),
-  makeCourse("Q&A", "34 Febr", "13:00 - 17:00")
+  makeCourse("Decolarea!", "14 - 16 Aprilie"),
+  makeCourse("Senzor sunet Infrared", "21 - 23 Aprilie"),
+  makeCourse("IR Sensor", "21 - 23 Aprilie"),
+  makeCourse("3D Printing", "28 - 30 Aprilie"),
+  makeCourse("Q&A", "28 - 30 Aprilie")
 ]
 
 class Course extends Component {
   render() {
-    const { desc, ora, data} = this.props.data;
+    const { desc, data} = this.props.data;
     return (
         <table className="course">
           <tr className="icon icon-gears"></tr>
           <tr className="course__desc course__title">{desc}</tr>
-          <tr className="course__desc course__detalii">{data}, {ora}</tr>
+          <tr className="course__desc course__detalii">{data}</tr>
         </table>
     );
   }
@@ -72,7 +72,7 @@ class Schedule extends Component {
               </td>
               <td>
                 <div className="timetable timetable__advanced-second">
-                  {advanced1.map(dataToCourse)}
+                  {advanced2.map(dataToCourse)}
                 </div>
               </td>
             </tr>
