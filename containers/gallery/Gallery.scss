@@ -31,10 +31,6 @@
   }
   .slider-container img {
     max-height: 400px;
-
-    &:hover {
-      filter: grayscale(100%);
-    }
   }
   .slider-content {
     position: relative;

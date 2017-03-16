@@ -22,7 +22,7 @@ const dummy = [
   {
     name: "Andrei Apostol",
     imgSrc: "http://i68.tinypic.com/2mxt6o.jpg",
-    role: "Coordonator Departament Tehnic",
+    role: "Coordonator Departament Tehnic & Trainer",
   }, {
     name: "Robert Voiculescu",
     imgSrc: "http://i67.tinypic.com/20rn2wi.jpg",
@@ -30,7 +30,7 @@ const dummy = [
   }, {
     name: "Dasca Ioana",
     imgSrc: "http://i66.tinypic.com/9s72q1.jpg",
-    role: "Management"
+    role: "Manager Proiect"
   },
   {
     name: "Vlad Cristia",
@@ -40,6 +40,16 @@ const dummy = [
   {
     name: "Alexandru Mitan",
     imgSrc:"http://i65.tinypic.com/2md08xs.jpg",
+    role: "Trainer"
+  },
+  {
+    name: "Andrei Marin",
+    imgSrc:"http://i67.tinypic.com/25a0zmc.jpg",
+    role: "Trainer"
+  },
+  {
+    name: "Alexandru Fierascu",
+    imgSrc:"http://i67.tinypic.com/8z0dox.jpg",
     role: "Trainer"
   },
   {
