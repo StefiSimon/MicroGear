@@ -40,14 +40,13 @@
       margin-right: 15px;
       border-radius: 6px;
       box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-      filter: grayscale(100%);
       img {
         width: 350px;
         height: 220px;
       }
 
       &:hover {
-        filter: grayscale(50%);
+        filter: grayscale(100%);
       }
 
     }
