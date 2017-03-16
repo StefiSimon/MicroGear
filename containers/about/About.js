@@ -40,7 +40,7 @@ const dummy = [
   {
     name: "Alexandru Mitan",
     imgSrc:"http://i65.tinypic.com/2md08xs.jpg",
-    role: "Trainer"
+    role: "Trainer, Front-End Dev"
   },
   {
     name: "Andrei Marin",
@@ -55,7 +55,7 @@ const dummy = [
   {
     name: "Stefania Simon",
     imgSrc:"http://i64.tinypic.com/sl02sh.jpg",
-    role: "Voluntar"
+    role: "Front-End Dev"
   }
 ];
 

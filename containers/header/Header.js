@@ -70,10 +70,15 @@ class Header extends Component {
                     <td className="header-container-menu-link">
                       <span className="icon icon-photo"></span> <a href="#galerie">Galerie</a>
                     </td>
-                    <td>
-                      <button className="header-container-menu-button"><span className="icon icon-sign-in"></span> <a target="_blank" href={link}>Inscrie-te
-                        acum!</a></button>
-                    </td>
+                    <a target="_blank" href={link}>
+
+                        <td className="header-container-menu-link">
+                          <button className="header-container-menu-button signup-button">
+                            <span className="icon icon-sign-in"></span>
+                            Inscrie-te acum!
+                          </button>
+                        </td>
+                    </a>
                   </tr>
 
                   <table className="header-container-menu-mobile" onMouseLeave={() => this.toggleMenu('close')}
@@ -92,9 +97,13 @@ class Header extends Component {
                     </tr>
                     <tr>
                       <td className="header-container-menu-link">
-                        <button className="header-container-menu-button">
-                          <span className="icon icon-sign-in"></span> <a target="_blank" href={link}>Inscrie-te acum!</a>
-                        </button>
+                        <a target="_blank" href={link}>
+
+                            <button className="header-container-menu-button signup-button">
+                              <span className="icon icon-sign-in"></span>
+                              Inscrie-te acum!
+                            </button>
+                        </a>
                       </td>
                     </tr>
                   </table>

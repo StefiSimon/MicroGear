@@ -73,6 +73,7 @@
         a {
           text-decoration: none;
           color: white;
+          cursor: pointer;
         }
       }
 
@@ -87,6 +88,10 @@
       }
     }
   }
+}
+
+.signup-button {
+    cursor: pointer !important; 
 }
 
 @media only screen and (min-width: $tablet) {
@@ -144,4 +149,3 @@
     }
   }
 }
-
