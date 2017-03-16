@@ -9,10 +9,11 @@ class Header extends Component {
       const nowScrollTop = $(window).scrollTop();
       if (nowScrollTop >= 200) {
         $('.header-container').removeClass('header-transparent');
-        $('.header-container').css('width', '100%');
         $('.header-container-menu-mobile').css('margin-right', '200px');
+        $('.header-container').css('border-bottom', '1px solid white');
       } else {
         $('.header-container').addClass('header-transparent');
+        $('.header-container').css('border-bottom', 'none');
       }
       lastScrollTop = nowScrollTop;
     });
